@@ -1,0 +1,27 @@
+﻿#body {
+    padding-top: 15px;
+}
+#nav{
+    display:grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.nav1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav2 {
+    display: flex;
+    justify-content: center
+}
+.nav3 {
+    display: flex;
+    justify-content: center
+}
+
+#nav2{
+    display:flex;
+
+}

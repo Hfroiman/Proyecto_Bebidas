@@ -1,0 +1,6 @@
+C:\Users\hfroi\OneDrive\Documentos\Github\Proyecto_Bebidas\Proyecto_Bebidas\Dominio\bin\Debug\Dominio.dll
+C:\Users\hfroi\OneDrive\Documentos\Github\Proyecto_Bebidas\Proyecto_Bebidas\Dominio\bin\Debug\Dominio.pdb
+C:\Users\hfroi\OneDrive\Documentos\Github\Proyecto_Bebidas\Proyecto_Bebidas\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\hfroi\OneDrive\Documentos\Github\Proyecto_Bebidas\Proyecto_Bebidas\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\hfroi\OneDrive\Documentos\Github\Proyecto_Bebidas\Proyecto_Bebidas\Dominio\obj\Debug\Dominio.dll
+C:\Users\hfroi\OneDrive\Documentos\Github\Proyecto_Bebidas\Proyecto_Bebidas\Dominio\obj\Debug\Dominio.pdb
