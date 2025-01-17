@@ -38,7 +38,6 @@
         }
     </style>
 
-
     <main>
         <h1>TU CARRITO 🛒</h1>
         <div id="principal">

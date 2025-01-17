@@ -161,6 +161,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="Style\Iniciosesion.css" />
     <Content Include="Style\Styles1.css" />
     <Content Include="Usuarios_Admin.aspx" />
     <Content Include="ViewSwitcher.ascx" />

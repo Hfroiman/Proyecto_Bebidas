@@ -42,14 +42,14 @@
 
         <nav id="nav">
             <div class="nav1">
-                <div>EMOGI</div>
-                <div><a href="InicioSesion.aspx">Inicia sesion</a>/<a href="Registrarse.aspx">Registrarse</a></div>
+                <div> <img alt="imagen ilustrativa" src="Imagenes/imgenlogo.jpg" style="height:35px; width:35px"/></div>
+                <div><a href="InicioSesion.aspx" style="text-decoration:none">Inicia sesion</a>/<a href="Registrarse.aspx" style="text-decoration:none">Registrarse</a></div>
             </div>
             <div class="nav2">
                 <h1><a href="Default.aspx" style="text-decoration:none"> 🍷 EMPRENDIMIENTO BEBIDAS 🍷 </a></h1>
             </div>
             <div class="nav3">
-                <a href="Carrito.aspx">LOGO  DE CARRITO </a>
+                <a href="Carrito.aspx" style="text-decoration:none"><img alt="imagen ilustrativa" src="Imagenes/imgcarrito.jpg" style="height:35px; width:35px" /></a>
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Productos escasos</button>
 
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">

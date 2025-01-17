@@ -33,47 +33,45 @@
         <div id="main">
             <div id="menu">
                 <div class="sector">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="APELLIDO..">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="NOMBRE..">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="DNI..">
+                    <asp:TextBox ID="txtapellido" runat="server" type="text" class="form-control" placeholder="APELLIDO.."></asp:TextBox>
+                    <asp:TextBox ID="txtnombre" runat="server" type="text" class="form-control" placeholder="NOMBRE.."></asp:TextBox>
+                    <asp:TextBox ID="txtdni" runat="server" type="text" class="form-control" placeholder="DNI.."></asp:TextBox>
                 </div>
                 <div class="sector">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="TELEFONO..">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="EMAIL..">
+                    <asp:TextBox ID="txttelefono" runat="server" type="text" class="form-control" placeholder="TELEFONO.."></asp:TextBox>
+                    <asp:TextBox ID="txtemail" runat="server" type="email" class="form-control" placeholder="EMAIL.."></asp:TextBox>
                 </div>
                 <div class="sector">
-                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="SELECIONAR LOCALIDAD">
-                    <datalist id="datalistOptions">
-                        <option value="tigre">
-                        <option value="New York">
-                        <option value="Seattle">
-                        <option value="Los Angeles">
-                        <option value="Chicago">
-                    </datalist>
-                    <input class="form-control" list="datalistOptions2" id="exampleDataList" placeholder="SELECIONAR BARRIO">
-                    <datalist id="datalistOptions2">
-                        <option value="las tunas">
-                        <option value="pacheco">
-                        <option value="delfino">
-                        <option value="Los Angeles">
-                        <option value="Chicago">
-                    </datalist>
+                    <asp:DropDownList ID="DropDownList1" class="form-control" runat="server" AutoPostBack="true">
+                        <asp:ListItem>SELECIONAR LOCALIDAD</asp:ListItem>
+                        <asp:ListItem>Tigre</asp:ListItem>
+                        <asp:ListItem>San Isidro</asp:ListItem>
+                        <asp:ListItem>San Fernando</asp:ListItem>
+                    </asp:DropDownList>
+
+                    <asp:DropDownList ID="DropDownList2" class="form-control" runat="server" value="BARRIO">
+                        <asp:ListItem>SELECIONAR BARRIO</asp:ListItem>
+                        <asp:ListItem>Ricardo Rojas</asp:ListItem>
+                        <asp:ListItem>Benavidez</asp:ListItem>
+                        <asp:ListItem>Talar</asp:ListItem>
+                        <asp:ListItem>Troncos de talar</asp:ListItem>
+                    </asp:DropDownList>
                 </div>
                 <div class="sector">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CALLE..">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ALTURA..">
+                    <asp:TextBox ID="txtcalle" runat="server" type="text" class="form-control" placeholder="CALLE.."></asp:TextBox>
+                    <asp:TextBox ID="txtaltura" runat="server" type="text" class="form-control" placeholder="ALTURA.."></asp:TextBox>
                 </div>
                 <div class="sector2">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="USUARIO..">
+                    <asp:TextBox ID="txtusuario" runat="server" type="text" class="form-control" placeholder="USUARIO.."></asp:TextBox>
                 </div>
                 <div class="sector2">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CONTRASEÑA..">
+                    <asp:TextBox ID="txtpasword1" runat="server" type="password" class="form-control" placeholder="CONTRASEÑA.."></asp:TextBox>
                 </div>
                 <div class="sector2">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CONTRASEÑA..">
+                    <asp:TextBox ID="txtpasword2" runat="server" type="password" class="form-control" placeholder="CONTRASEÑA.."></asp:TextBox>
                 </div>
                 <div class="sector2">
-                    <button type="button" class="btn btn-success">Enviar</button>
+                    <asp:Button type="button" runat="server" class="btn btn-success btn-block" Text="ENVIAR"/>
                 </div>
             </div>
         </div>
