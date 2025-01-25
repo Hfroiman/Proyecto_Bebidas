@@ -17,6 +17,7 @@ namespace Proyecto_Bebidas
         }
         protected void btningresar_Click(object sender, EventArgs e)
         {
+            alert.Visible = false;
             UsuarioNegocio Usnegocio = new UsuarioNegocio();
             Usuario usuario = new Usuario();
             try
@@ -33,15 +34,21 @@ namespace Proyecto_Bebidas
                         if (((Dominio.Usuario)Session["usuario"]).TipoUsuario == TipoUsuario.Admin)
                         {
                             Response.Redirect("Home_Admin.aspx", false);
+                            alert.Text = "HAS INGRESADO COMO ADMIN";
+                            alert.Visible = true;
                         }
                         else
                         {
                             Response.Redirect("Default.aspx", false);
+                            alert.Text = "HAS INGRESADO CORRECTAMENTE";
+                            alert.Visible = true;
                         }
                     }
                     else
                     {
                         ///No existe el usuario, informar que no se puede loguear.
+                        alert.Text = "Error en los datos ingresados.";
+                        alert.Visible = true;
                     }
                 }
 
@@ -54,22 +61,20 @@ namespace Proyecto_Bebidas
         public bool controlDatosIngresados(Usuario usuario)
         {
             int min = 8;
-            int error = 0;
             if (usuario.Email == "")
             {
                 ///INGRESAR EMAIL
-                ///error++;
+                alert.Text = "DEBES INGRESAR UN EMAIL.";
+                alert.Visible = true;
+                return false;
             }
-            if (usuario.Contraseña.Length < min)
+            /*if (usuario.Contraseña.Length < min)
             {
-                ///NNO CUMPLE CON REGLA DE SER MAYOR A 8 CARACTERES.
-                ///error++;
-            }
-            if (error==0)
-            {
-                return true;
-            }
-            return false;
+                alert.Text = "ERROR EN LA CONTRASEÑA, MINIMO 8 CARACTERES";
+                alert.Visible = true;
+                return false;
+            }*/
+            return true;
         }
     }
 }
