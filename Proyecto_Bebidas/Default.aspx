@@ -31,12 +31,12 @@
             </nav>
             <nav>
                 <div class="btn-group btn-group-sm" role="group" aria-label="Basic example" id="nav2">
-                    <asp:Button ID="btnOfertas" class="btn btn-primary" runat="server" Text="Oferta" />
+                    <asp:Button ID="btnOfertas" class="btn btn-primary" runat="server" Text="Ofertas" />
                     <asp:Button ID="btnCombos" class="btn btn-primary" runat="server" Text="Combos" />
                     <asp:Button ID="btnVinos" class="btn btn-primary" runat="server" Text="Vinos" />
                     <asp:Button ID="btnCervezas" class="btn btn-primary" runat="server" Text="Cervezas" />
                     <asp:Button ID="btnGaseosas" class="btn btn-primary" runat="server" Text="Gaseosas" />
-                    <asp:Button ID="btnJuegos" class="btn btn-primary" runat="server" Text="Juegos" />
+                    <asp:Button ID="btnJugos" class="btn btn-primary" runat="server" Text="Jugos" />
                 </div>
             </nav>
         </header>

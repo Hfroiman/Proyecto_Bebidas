@@ -13,5 +13,18 @@ namespace Proyecto_Bebidas
         {
 
         }
+        protected void CerrarSesionClick (object sender, EventArgs e)
+        {
+            Session.Remove("usuario");
+            Response.Redirect("InicioSesion.aspx");
+        }
+        protected void Registrarse (object sender, EventArgs e)
+        {
+            Response.Redirect("Registrarse.aspx");
+        }
+        protected void IniciarSesionClick(object sender, EventArgs e)
+        {
+            Response.Redirect("InicioSesion.aspx");
+        }
     }
 }

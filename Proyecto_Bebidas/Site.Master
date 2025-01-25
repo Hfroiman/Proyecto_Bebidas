@@ -42,15 +42,40 @@
 
         <nav id="nav">
             <div class="nav1">
-                <div> <img alt="imagen ilustrativa" src="Imagenes/imgenlogo.jpg" style="height:35px; width:35px"/></div>
-                <div><a href="InicioSesion.aspx" style="text-decoration:none">Inicia sesion</a>/<a href="Registrarse.aspx" style="text-decoration:none">Registrarse</a></div>
+                <div class="dropdown">
+                    <img alt="imagen ilustrativa" src="Imagenes/imgenlogo.jpg" style="height: 50px; width: 50px" type="button" data-bs-toggle="dropdown" aria-expanded="false" />
+                    <ul class="dropdown-menu">
+                        <% if (Session["usuario"] == null)
+                            {%>
+                        <li>
+                            <asp:Button runat="server" CssClass="btn" type="hidden" Style="text-decoration: none" Text="Iniciar sesion" OnClick="IniciarSesionClick"></asp:Button></li>
+                        <li>
+                            <asp:Button runat="server" CssClass="btn" type="hidden" Style="text-decoration: none" Text="Registrarse" OnClick="Registrarse"></asp:Button></li>
+                        <%}
+                            else
+                            {%>
+                        <li>
+                            <asp:Button href="Perfil.aspx" runat="server" CssClass="btn" type="hidden" Style="text-decoration: none" Text="Ver perfil"></asp:Button></li>
+                        <li>
+                            <asp:Button href="InicioSesion.aspx" runat="server" CssClass="btn" type="hidden" Style="text-decoration: none" Text="Cerrar sesion" OnClick="CerrarSesionClick"></asp:Button></li>
+                        <%}%>
+                    </ul>
+                </div>
+
             </div>
             <div class="nav2">
-                <h1><a href="Default.aspx" style="text-decoration:none"> 🍷 EMPRENDIMIENTO BEBIDAS 🍷 </a></h1>
+                <h1><a href="Default.aspx" style="text-decoration: none">🍷 EMPRENDIMIENTO BEBIDAS 🍷 </a></h1>
             </div>
             <div class="nav3">
-                <a href="Carrito.aspx" style="text-decoration:none"><img alt="imagen ilustrativa" src="Imagenes/imgcarrito.jpg" style="height:35px; width:35px" /></a>
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Productos escasos</button>
+                <%if (Session["usuario"] == null || ((Dominio.Usuario)Session["usuario"]).TipoUsuario == Dominio.TipoUsuario.Cliente)
+                    {%>
+                <a href="Carrito.aspx" style="text-decoration: none">
+                    <img alt="imagen ilustrativa" src="Imagenes/imgcarrito.jpg" style="height: 35px; width: 35px" /></a>
+                <%}
+                    else
+                    {%>
+                <button class="btn btn-primary search-button affix" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Productos escasos</button>
+                <%}%>
 
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
@@ -62,7 +87,6 @@
                     </div>
                 </div>
             </div>
-
         </nav>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">

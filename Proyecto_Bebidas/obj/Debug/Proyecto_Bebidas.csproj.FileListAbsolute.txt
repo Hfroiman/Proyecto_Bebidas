@@ -74,3 +74,7 @@ C:\Users\hfroi\OneDrive\Documentos\Github\Proyecto_Bebidas\Proyecto_Bebidas\Proy
 C:\Users\hfroi\OneDrive\Documentos\Github\Proyecto_Bebidas\Proyecto_Bebidas\Proyecto_Bebidas\obj\Debug\Proyecto_Bebidas.csproj.CopyComplete
 C:\Users\hfroi\OneDrive\Documentos\Github\Proyecto_Bebidas\Proyecto_Bebidas\Proyecto_Bebidas\obj\Debug\Proyecto_Bebidas.dll
 C:\Users\hfroi\OneDrive\Documentos\Github\Proyecto_Bebidas\Proyecto_Bebidas\Proyecto_Bebidas\obj\Debug\Proyecto_Bebidas.pdb
+C:\Users\hfroi\OneDrive\Documentos\Github\Proyecto_Bebidas\Proyecto_Bebidas\Proyecto_Bebidas\bin\Dominio.dll
+C:\Users\hfroi\OneDrive\Documentos\Github\Proyecto_Bebidas\Proyecto_Bebidas\Proyecto_Bebidas\bin\Negocio.dll
+C:\Users\hfroi\OneDrive\Documentos\Github\Proyecto_Bebidas\Proyecto_Bebidas\Proyecto_Bebidas\bin\Dominio.pdb
+C:\Users\hfroi\OneDrive\Documentos\Github\Proyecto_Bebidas\Proyecto_Bebidas\Proyecto_Bebidas\bin\Negocio.pdb

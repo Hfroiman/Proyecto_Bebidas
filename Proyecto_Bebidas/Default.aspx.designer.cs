@@ -78,13 +78,13 @@ namespace Proyecto_Bebidas
         protected global::System.Web.UI.WebControls.Button btnGaseosas;
 
         /// <summary>
-        /// Control btnJuegos.
+        /// Control btnJugos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnJuegos;
+        protected global::System.Web.UI.WebControls.Button btnJugos;
 
         /// <summary>
         /// Control Image1.
